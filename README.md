@@ -33,7 +33,6 @@ This project aims to analyze and predict the risk of cardiovascular disease (CVD
  * Feature Engineering
  * Model building
  * Model Evaluation
- * Regularization
  * Hyperparameter tuning 
  * Pipeline Implementation
  * Test with unseen data
@@ -48,12 +47,12 @@ This project aims to analyze and predict the risk of cardiovascular disease (CVD
 
 ## About the project
 
-In this project, I developed a machine learning model to predict the presence of cardiovascular disease using patient health data. I began this project by loading and exploring the dataset to understand its structure and identify key features. As part of data preprocessing,I applied capping for handling outliers, standardized the features using StandardScaler and converted the age values from days to years for clarity. To enhance model performance, I applied SelectKBest for feature selection, retaining only the most 8 relevant attributes and developed the model.I evaluated the model performance and applied regularization technique on models to prevent overfitting, found GradientBoosting as the best model,performed hyperparametertuning on this to increase its performance.Then built a predictive pipeline using a GradientBoostingClassifier, optimizing its parameters to improve accuracy. Additionally, I prepared an "unseen" dataset  simulating real-world test conditions. The trained model was used to make predictions on this unseen data, demonstrating its ability to generalize and potentially assist in early detection of cardiovascular risk.
+In this project, I developed a machine learning model to predict the presence of cardiovascular disease using patient health data. I began this project by loading and exploring the dataset to understand its structure and identify key features. As part of data preprocessing,I applied capping for handling outliers, standardized the features using StandardScaler and converted the age values from days to years for clarity. To enhance model performance, I applied all features for model building and evaluated the model performance, found GradientBoosting as the best model,performed hyperparametertuning on this to increase its performance.Then built a predictive pipeline using a GradientBoostingClassifier, optimizing its parameters to improve accuracy. Additionally, I prepared an "unseen" dataset  simulating real-world test conditions. The trained model was used to make predictions on this unseen data, demonstrating its ability to generalize and potentially assist in early detection of cardiovascular risk.
 
 ## Results
 
  * Best performing model: GradientBoostingClassifier
- * Accuracy: 73.82%
+ * Accuracy: 74.01%
 
 
 
